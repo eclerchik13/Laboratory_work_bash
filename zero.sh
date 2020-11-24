@@ -7,6 +7,6 @@ echo "First from /tmp/nozeros"
 cat /tmp/nozeros | head 
 echo "Last 10 from /tmp/zeros"
 cat /tmp/zeros | tail
-echo "Last of last..."
+echo "Last 10 from /tmp/nozeros"
 cat /tmp/nozeros | tail
 
