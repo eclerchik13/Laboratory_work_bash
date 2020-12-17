@@ -1,5 +1,5 @@
 #!/bin/bash
 find ~/ -type f -name "*.txt"
-find ~/ -type f -name "*.txt" > /tmp/temporary
-du -h < /tmp/temporary
+du --max-depth=1 -b ~/*.txt | awk '{sum += $1} END {print sum}'
+cat ~/*.txt | wc -l
 
